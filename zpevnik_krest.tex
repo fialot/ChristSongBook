@@ -1,0 +1,72 @@
+\documentclass[10pt,a5paper,czech,twoside]{article}	
+
+% ----- Packages -----
+\usepackage[chorded]{songs}		% Songs
+\usepackage{geometry}			% Geometry - for margins
+\usepackage{multicol}			% Multi columns
+\usepackage[T1]{fontenc}		% Czech font
+
+% ----- Document format -----
+\geometry{margin=20pt}		% Set margins
+\songcolumns{1}				% Colums count
+\versesep=7pt plus 2pt minus 2pt	% Spacing between verses
+%\baselineadj=-1pt plus 1pt minus 0pt
+\renewcommand{\printchord}[1]{\rmfamily\bf#1}
+\afterpreludeskip=-6pt plus 0fil
+\beforepostludeskip=-5pt plus 0fil
+
+\renewcommand{\extendprelude}{\showrefs{\bfseries\songcopyright\par}}	% Not show authors
+
+%\chordsoff					% Turn off chords
+\norepchoruses
+\MultiwordChords
+
+\newindex{songIndex}{idxfile}
+
+% ----- Document -----
+\begin{document}
+
+%\songsection{ccc}
+
+\begin{songs}{}
+\input{songs_christ/Abakuk}
+\input{songs_christ/Abba_otce}
+\input{songs_christ/Apostolska}
+\input{songs_christ/At_pozehnan_je_Buh}
+\input{songs_christ/At_srdce_me_tebe_vida}
+\input{songs_christ/Boze_otce}
+\input{songs_christ/Bozi_beranku_tobe_patri_cest}
+\input{songs_christ/Bozi_laska}
+\input{songs_christ/Buh_je_sila_ma}
+\input{songs_christ/Byl_clovek_jako_ja}
+\input{songs_christ/Cista_jak_studanka}
+\input{songs_christ/Davam_ti_Pane}
+\input{songs_christ/Davas_mi_lasku_vzacnou}
+\input{songs_christ/Do_stinu_kridel_tvych}
+\input{songs_christ/Do_tmy_na_svet}
+\input{songs_christ/Do_tvych_starosti}
+\input{songs_christ/Dobrorec_duse_ma_Hospodinu}
+\input{songs_christ/Dobry_pastyr}
+\input{songs_christ/Duch_a_nevesta}
+
+
+
+\end{songs}
+
+\songsection{Postní}
+\begin{songs}{}
+\input{songs_christ/Ave_crux}
+\input{songs_christ/Byl_jsi_tam}
+\input{songs_christ/Diky_za_tvuj_kriz}
+\end{songs}
+
+\songsection{Dětské písně}
+\begin{songs}{}
+\setcounter{songnum}{6}
+\input{songs_christ/Andele_nade_mnou_bdi}
+\input{songs_christ/Noe}
+\end{songs}
+
+\showindex[2]{Index of Song Titles}{songIndex}
+
+\end{document}
