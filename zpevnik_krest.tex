@@ -1,10 +1,11 @@
-\documentclass[10pt,a5paper,czech,twoside]{article}	
+\documentclass[10pt,a5paper,twoside]{article}	
 
 % ----- Packages -----
 \usepackage[chorded]{songs}		% Songs
 \usepackage{geometry}			% Geometry - for margins
 \usepackage{multicol}			% Multi columns
 \usepackage[T1]{fontenc}		% Czech font
+\usepackage{wrapfig}            % Inserting items outside the text  
 
 % ----- Document format -----
 \geometry{margin=20pt}		% Set margins
@@ -20,6 +21,7 @@
 %\chordsoff					% Turn off chords
 \norepchoruses
 \MultiwordChords
+\notenames{A}{H}{C}{D}{E}{F}{G} % German note names
 
 \newindex{songIndex}{idxfile}
 
@@ -51,6 +53,14 @@
 \input{songs_christ/Ecce_homo}
 \input{songs_christ/Effatha}
 \input{songs_christ/El_saddaj}
+\input{songs_christ/Haleluja_slava_cest}
+\input{songs_christ/Haleluja_vsichni_zpivaji}
+\input{songs_christ/Hledam_vas}
+\input{songs_christ/Hosana}
+\input{songs_christ/Hospodin_je_muj_pastyr}
+\input{songs_christ/Hospodin_kraluje}
+\input{songs_christ/Hospodine_Pane_nas}
+\input{songs_christ/Hymna_spolecenstvi_Pramen}
 
 \end{songs}
 
@@ -65,6 +75,7 @@
 \begin{songs}{}
 \setcounter{songnum}{6}
 \input{songs_christ/Andele_nade_mnou_bdi}
+\input{songs_christ/Haleluja_sabalaba_labam_bam}
 \input{songs_christ/Noe}
 \end{songs}
 
